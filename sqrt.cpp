@@ -5,14 +5,16 @@ int int_sqrt(int x);
 int Mypow(int di,int mi);
 int main()
 
-{   int i;
+{
+    int i;
     for(i=0;i<=100;i++)
     cout<<i<<" "<<int_sqrt(i)<<endl;
     system("pause");
     return 0;
 }
 int int_sqrt(int x)
-{   int i;
+{
+    int i;
     for(i=0;;i++)
     {
       if(x>=Mypow(i,2)&&x<Mypow(i+1,2))
