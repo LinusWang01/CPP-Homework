@@ -21,7 +21,7 @@ int number(int a)
 }
 int  mixjudge(int a)
 {
-    int i,sum;
+    int i,sum=0;
     for(i=0;i<digit;i++)
         sum=sum+mix(num[i],digit);
     if(sum==a)
