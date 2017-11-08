@@ -31,8 +31,8 @@ int no_of_digits(int x)
     return 1;
     if(x<0)
     {
-        x=-x;
-        flag=1;
+      x=-x;
+      flag=1;
     }
     else
     flag=0;
@@ -54,13 +54,8 @@ bool is_narcissistic(int x)
     for(i=0;i<digit;i++)
     sum=sum+Mypow(num[i],digit);
     if(sum==x)
-   {
-       sum=0;
-       return true;
-   }
+    return true;
     else
-   {
-       sum=0;
-       return false;
-   }
+    return false;
+
 }
