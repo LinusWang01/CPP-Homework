@@ -7,10 +7,10 @@ int no_of_digits(int x);
 bool is_narcissistic(int x);
 int main()
 {
-    cout<<"The narcissistic numbers less than 1000000 are:"<<endl;
-    for(num0=0;num0<1000000;num0++)
+    cout<<is_narcissistic(2)<<endl;
+   for(num0=0;num0<1000000;num0++)
     {
-        if(is_narcissistic(num0))
+       if(is_narcissistic(num0))
             cout<<num0<<endl;
     }
     system("pause");
@@ -47,12 +47,18 @@ int no_of_digits(int x)
 }
 bool is_narcissistic(int x)
 {
-    int i,sum,digit;
+    int i,sum=0,digit;
     digit=no_of_digits(x);
     for(i=0;i<digit;i++)
     sum=sum+Mypow(num[i],digit);
     if(sum==x)
-    return true;
+    {
+        sum=0;
+        return true;
+    }
     else
+    {
+    sum=0;
     return false;
+    }
 }
