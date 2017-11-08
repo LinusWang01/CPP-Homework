@@ -12,7 +12,6 @@ int main()
     {
         if(is_narcissistic(num0))
             cout<<num0<<endl;
-
     }
     system("pause");
     return 0;
@@ -36,7 +35,6 @@ int no_of_digits(int x)
     }
     else
     flag=0;
-
     for(i=0;x>0;i++)
     {
       num[i]=x%10;
@@ -57,5 +55,4 @@ bool is_narcissistic(int x)
     return true;
     else
     return false;
-
 }
