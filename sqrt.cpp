@@ -8,7 +8,7 @@ int main()
 {
     int i;
     for(i=0;i<=100;i++)
-    cout<<i<<"  "<<int_sqrt(i)<<endl;
+    cout<<i<<" "<<int_sqrt(i)<<endl;
     system("pause");
     return 0;
 }
