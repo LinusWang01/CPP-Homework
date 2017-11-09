@@ -10,7 +10,7 @@ int main()
    for(num0=0;num0<1000000;num0++)
     {
        if(is_narcissistic(num0))
-            cout<<num0<<"                 "<<no_of_digits(num0)<<endl;
+            cout<<num0<<"\t\t\t\t\t\t\t"<<no_of_digits(num0)<<endl;
     }
     system("pause");
     return 0;
