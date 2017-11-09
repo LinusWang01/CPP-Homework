@@ -6,12 +6,11 @@ int Mypow(int di,int mi);
 int no_of_digits(int x);
 bool is_narcissistic(int x);
 int main()
-{
-    cout<<is_narcissistic(2)<<endl;
+{cout<<"The narcissistic less than 1000000 are (we will output their digit too) "<<endl;
    for(num0=0;num0<1000000;num0++)
     {
        if(is_narcissistic(num0))
-            cout<<num0<<endl;
+            cout<<num0<<"                 "<<no_of_digits(num0)<<endl;
     }
     system("pause");
     return 0;
