@@ -25,7 +25,7 @@ int  mixjudge(int a)
     for(i=0;i<digit;i++)
         sum=sum+mix(num[i],digit);
     if(sum==a)
-       cout<<sum<<endl;
+        cout<<sum<<endl;
     sum=0;
 }
 int main()
