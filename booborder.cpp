@@ -5,7 +5,7 @@ using namespace std;
 		int num[1000];
 		int flaga[1000];
 		bool flag=true;
-		int length=21;
+		int length=20;
 		int i;
 		num[length]=2147483647;
 		for(i=0;i<length;i++)
