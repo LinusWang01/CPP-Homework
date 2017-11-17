@@ -5,11 +5,14 @@ using namespace std;
 		int num[1000];
 		int flaga[1000];
 		bool flag=true;
-		int length=20;
+		int length;
 		int i;
+                cout<<"请输入数据长度"<<endl;
+                cin>>length;
 		num[length]=2147483647;
+		cout<<"请输入数据"<<endl;
 		for(i=0;i<length;i++)
-			cin>>num[i];
+                	cin>>num[i];
 		do
 		{
 			for(int i=0;i<length;i++)
