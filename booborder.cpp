@@ -9,10 +9,7 @@ using namespace std;
 		int i;
 		num[length]=2147483647;
 		for(i=0;i<length;i++)
-		{
 			cin>>num[i];
-			cout<<num[i]<<" ";
-		}
 		do
 		{
 			for(int i=0;i<length;i++)
