@@ -37,7 +37,7 @@ using namespace std;
 			cout<<endl;
 		}while(flag==1);
 		for(int m=0;m<length;m++)
-		cout<<num[m]<<" ";
+			cout<<num[m]<<" ";
 		cout<<endl;
 
 	}
