@@ -5,14 +5,14 @@ using namespace std;
 	    int lengthA,lengthB;
 	    int A[10];
 	    int B[10];
-	    cout<<"请 输入数组A长度"<<endl;
+	    cout<<"Please enter the length of arrayA"<<endl;
 	    cin>>lengthA;
-	    cout<<"请 输入数组A数据"<<endl;
+	    cout<<"Please enter the data of arrayA"<<endl;
 		for(int i=0;i<lengthA;i++)
 		   cin>>A[i];
-		cout<<"请 输入数组B长度"<<endl;
+		cout<<"Please enter the length of arrayB"<<endl;
 	    cin>>lengthB;
-	    cout<<"请 输入数组B数据"<<endl;
+	    cout<<"Please enter the data of arrayB"<<endl;
 		 for(int i=0;i<lengthB;i++)
 		   cin>>B[i];
 		   int C[20];
