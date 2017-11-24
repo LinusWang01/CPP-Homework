@@ -10,7 +10,7 @@ int main()
 	        for(int i=0;i<mon-1;i++)
 			sum+=month[i];
                 sum=sum+day;
-		if((((year%4==0)&&!(year%100))||(year%400==0))&&((mon>2)))
+		if((((year%4==0)&&!(year%100))||(year%400==0))&&(mon>2))
 	  		sum=sum+1;
 		cout<<sum<<endl;
 	
