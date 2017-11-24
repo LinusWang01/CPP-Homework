@@ -25,20 +25,12 @@ int main()
                         	cout<<endl;
 			}
                         if(i==16)
-                          i=-1;
+                        	i=-1;
 			for(int q=0;q<17;q++)
 				if(Array[q]==0)
-<<<<<<< HEAD
                               		sum++;
-			i++;
-=======
-                              {
-				sum++;
-			      }
-			
-                        }
+                        
                         i++;
->>>>>>> ec97f27fd70fdf90879f1826ecb12671347ba485
                 }
 	for(int x=0;x<17;x++)
         	cout<<Array[x];
