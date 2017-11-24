@@ -35,7 +35,7 @@ int main()
 			
                         }
                         i++;
-                 }
+                }
 	for(int x=0;x<17;x++)
         	cout<<Array[x];
           	cout<<endl;
