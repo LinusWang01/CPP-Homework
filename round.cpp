@@ -20,28 +20,23 @@ int main()
 			{
 				Array[i]=0;
 				sum1=0;
-                          for(int l=0;l<17;l++)
-                          cout<<Array[l];
-                          cout<<endl;
+                        	for(int l=0;l<17;l++)
+                        		cout<<Array[l];
+                        	cout<<endl;
 			}
                         if(i==16)
                           i=-1;
 			for(int q=0;q<17;q++)
-			{
 				if(Array[q]==0)
-                              {
-				sum++;
-			      }
-			
-                        }
-                        i++;
-                 }
+                              		sum++;
+			i++;
+                }
 	for(int x=0;x<17;x++)
         	cout<<Array[x];
-          	cout<<endl;
+        cout<<endl;
         for(int d=0;d<17;d++)
-        if(Array[d])
-        cout<<d+1<<endl;
+        	if(Array[d])
+        		cout<<d+1<<endl;
 }
 
 
