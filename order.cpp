@@ -49,18 +49,22 @@ int insert(int num0,int des,int A[])
 }
 void output(int A[])
 {
-    for(int i=0;i<20;i++)
+    for(int i=0;i<sizeof(A)/sizeof(int);i++)
         cout<<A[i]<<"  ";
         cout<<endl;
 }
 void fillAtoC(int C[],int A[])
 {
-   for(int i=0;i<10;i++)
+   for(int i=0;i<sizeof(A)/sizeof(int);i++)
        C[i]=A[i];
 }
 
 void input(int A[])
-{
-	for(int i=0;i<10;i++)
+{       
+        int length;
+        cout<<"请输入数据长度"<<endl;
+        cin>>length;
+        cout<<"请输入数据"<<endl;
+	for(int i=0;i<length;i++)
 	cin>>A[i];
 }
