@@ -9,14 +9,14 @@ int deleteinfo(int deleteindex);
 int searchonce(string A[],string B[],float C[]);
 void showMenu()
 {
-        cout << "0:Ô±¹¤ÐÅÏ¢Â¼Èë" << endl;
-        cout << "1:°´ÕÕÐÕÃû²éÑ¯" << endl;
-        cout << "2:°´ÕÕ¹¤ºÅ²éÑ¯" << endl;
-        cout << "3:°´ÕÕÐÕÃûÅÅÐò" << endl;
-        cout << "4:°´ÕÕ¹¤ºÅÅÅÐò" << endl;
-        cout << "5:°´ÕÕ¹¤×ÊÅÅÐò" << endl;
-        cout << "6:É¾³ýÔ±¹¤ÐÅÏ¢" << endl;
-        cout << "e:ÍË³ö" << endl;
+        cout << "0:å‘˜å·¥ä¿¡æ¯å½•å…¥" << endl;
+        cout << "1:æŒ‰ç…§å§“åæŸ¥è¯¢" << endl;
+        cout << "2:æŒ‰ç…§å·¥å·æŸ¥è¯¢" << endl;
+        cout << "3:æŒ‰ç…§å§“åæŽ’åº" << endl;
+        cout << "4:æŒ‰ç…§å·¥å·æŽ’åº" << endl;
+        cout << "5:æŒ‰ç…§å·¥èµ„æŽ’åº" << endl;
+        cout << "6:åˆ é™¤å‘˜å·¥ä¿¡æ¯" << endl;
+        cout << "e:é€€å‡º" << endl;
 }
 
 //define the global variable to store employee information
@@ -30,36 +30,36 @@ int main()
         {    
                 showMenu();
                 char fs = ' ';
-                cout << "#ÇëÑ¡Ôñ¹¦ÄÜ:";
+                cout << "#è¯·é€‰æ‹©åŠŸèƒ½:";
                 cin >> fs;
 
                 if (fs=='0')
                 {
-					system("cls");
-                	cout<<"#ÇëÊäÈëÐÅÏ¢,¸ñÊ½Îª£ºÐÕÃû ¹¤ºÅ ¹¤×Ê,¿ÉÊäÈë¶à×éÊý¾Ý£¬Ctrl+Z+Enter½áÊø¡£"<<endl;;
+			system("cls");
+                	cout<<"#è¯·è¾“å…¥ä¿¡æ¯,æ ¼å¼ä¸ºï¼šå§“å å·¥å· å·¥èµ„,å¯è¾“å…¥å¤šç»„æ•°æ®ï¼ŒCtrl+Z+Enterç»“æŸã€‚"<<endl;;
                 	while(cin>>names[index]>>ecodes[index]>>sal[index])
-							{
+				{
                        	         index++;
                       	         if(index>99)
                        	                {
-                                                cout<<"#Êý¾Ý¿âÒÑÂú£¬ÎÞ·¨¼ÓÈëÐÂµÄÊý¾Ý";
+                                                cout<<"#æ•°æ®åº“å·²æ»¡ï¼Œæ— æ³•åŠ å…¥æ–°çš„æ•°æ®";
                                                 break;
                                         }
                         	}
-                    system("cls");
+                        system("cls");
         		}
 
                 else if (fs=='1')
                 {
                 	system("cls");
-                	cout<<"#ÇëÊäÈëÐÕÃû,¿É²éÑ¯¶à×éÊý¾Ý£¬Ctrl+Z+Enter½áÊø¡£"<<endl;;
+                	cout<<"#è¯·è¾“å…¥å§“å,å¯æŸ¥è¯¢å¤šç»„æ•°æ®ï¼ŒCtrl+Z+Enterç»“æŸã€‚"<<endl;;
                 	search(names,ecodes,sal);
                 	system("cls");
 				}
                 else if (fs=='2')
                 {
                 	system("cls");
-                	cout<<"#ÇëÊäÈë¹¤ºÅ,¿É²éÑ¯¶à×éÊý¾Ý£¬Ctrl+Z+Enter½áÊø¡£"<<endl;;
+                	cout<<"#è¯·è¾“å…¥å·¥å·,å¯æŸ¥è¯¢å¤šç»„æ•°æ®ï¼ŒCtrl+Z+Enterç»“æŸã€‚"<<endl;;
 					search(ecodes,names,sal);
 					system("cls");
                 }
@@ -67,46 +67,46 @@ int main()
                 {
                 	system("cls");
                 	sortstring(names,ecodes,sal) ;
-                	cout<<"#°´ÈÎÒâ¼ü·µ»ØÖ÷½çÃæ"<<endl;
-					getchar(); 
-					getchar();
-					system("cls");
+                	cout<<"#æŒ‰ä»»æ„é”®è¿”å›žä¸»ç•Œé¢"<<endl;
+			getchar(); 
+			getchar();
+			system("cls");
                 	
 				}
                 else if (fs=='4')
                 {	
                 	system("cls");
-					sortstring(ecodes,names,sal) ;
-					cout<<"#°´ÈÎÒâ¼ü·µ»ØÖ÷½çÃæ"<<endl;
-					getchar(); 
-					getchar();
-					system("cls");
+			sortstring(ecodes,names,sal) ;
+			cout<<"#æŒ‰ä»»æ„é”®è¿”å›žä¸»ç•Œé¢"<<endl;
+			getchar(); 
+			getchar();
+			system("cls");
                 }
                 else if (fs=='5')
                 {	
                 	system("cls");
-					sortfloat(names,ecodes,sal) ;
-					cout<<"#°´ÈÎÒâ¼ü·µ»ØÖ÷½çÃæ"<<endl;
-					getchar(); 
-					getchar();
-					system("cls");
+			sortfloat(names,ecodes,sal) ;
+			cout<<"#æŒ‰ä»»æ„é”®è¿”å›žä¸»ç•Œé¢"<<endl;
+			getchar(); 
+			getchar();
+			system("cls");
                 }
                 else if (fs=='6')
                 {	
                 	system("cls");
 					char flag=' '; 
                 	int deleteindex;
-                	cout<<"#ÇëÊäÈëÄãÒªÉ¾³ýµÄÔ±¹¤ÐÕÃû "<<endl; 
+                	cout<<"#è¯·è¾“å…¥ä½ è¦åˆ é™¤çš„å‘˜å·¥å§“å "<<endl; 
                 	deleteindex=searchonce(names,ecodes,sal);
-					cout<<"#ÄãÈ·¶¨ÒªÉ¾³ýÕâÒ»×éÐÅÏ¢Âð£¿ÇëÊäÈëyÈ·ÈÏ¡£"<<endl;
-					cin>>flag;
-					if(flag=='y')
-						deleteinfo(deleteindex);
-					system("cls");
+			cout<<"#ä½ ç¡®å®šè¦åˆ é™¤è¿™ä¸€ç»„ä¿¡æ¯å—ï¼Ÿè¯·è¾“å…¥yç¡®è®¤ã€‚"<<endl;
+			cin>>flag;
+			if(flag=='y')
+				deleteinfo(deleteindex);
+			system("cls");
                 }
-  				else if (fs=='e')
+  		else if (fs=='e')
                 {
-					break;
+			break;
                 }
         	cin.clear();
 		}
@@ -116,7 +116,8 @@ int search(string A[],string B[],float C[])
 	int i,f=0;
 	string M;
 	while(cin>>M)
-	{	f=0;
+	{	
+		f=0;
 		for(i=0;i<index;i++)
 			if(A[i]==M)
 			{
@@ -125,7 +126,7 @@ int search(string A[],string B[],float C[])
 				break;
 			}
 			if(!f)
-		 		cout<<"#Êý¾Ý¿âÀïÃ»ÓÐÕâÌõÐÅÏ¢"<<endl;
+		 		cout<<"#æ•°æ®åº“é‡Œæ²¡æœ‰è¿™æ¡ä¿¡æ¯"<<endl;
 	}
 	return 0; 
 }
@@ -208,7 +209,7 @@ int searchonce(string A[],string B[],float C[])
 			break;
 		} 
 		if(!f)
-		 cout<<"#Êý¾Ý¿âÀïÃ»ÓÐÕâÌõÐÅÏ¢"<<endl;
+		 cout<<"#æ•°æ®åº“é‡Œæ²¡æœ‰è¿™æ¡ä¿¡æ¯"<<endl;
 	return i; 
 }
 

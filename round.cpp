@@ -11,9 +11,8 @@ int main()
 	int sum=0,sum1;
         i=0;
 	while(sum<16)
-		{      
-                         
-                        sum=0;
+		{       
+			sum=0;
 			if(Array[i]==1)
 				sum1++;
 			if(sum1==3)
@@ -29,7 +28,6 @@ int main()
 			for(int q=0;q<17;q++)
 				if(Array[q]==0)
                               		sum++;
-                        
                         i++;
                 }
 	for(int x=0;x<17;x++)
