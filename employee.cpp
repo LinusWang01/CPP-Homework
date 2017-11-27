@@ -187,7 +187,7 @@ int sortfloat(string A[],string B[],float C[])
 }
 int deleteinfo(int deleteindex)
 {
-	for(int i=deleteindex;i<index;i++)
+	for(int i=deleteindex;i<index-1;i++)
 		{
 			names[i]=names[i+1];
 	 		ecodes[i]=ecodes[i+1];
