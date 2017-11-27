@@ -35,17 +35,17 @@ int main()
 
                 if (fs=='0')
                 {
-			system("cls");
+					system("cls");
                 	cout<<"#请输入信息,格式为：姓名 工号 工资,可输入多组数据，Ctrl+Z+Enter结束。"<<endl;;
                 	while(cin>>names[index]>>ecodes[index]>>sal[index])
-				{
+						{
                        	         index++;
                       	         if(index>99)
                        	                {
                                                 cout<<"#数据库已满，无法加入新的数据";
                                                 break;
                                         }
-                        	}
+                		}
                         system("cls");
         		}
 
