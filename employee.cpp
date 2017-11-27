@@ -35,19 +35,19 @@ int main()
 
                 if (fs=='0')
                 {
-					system("cls");
+			system("cls");
                 	cout<<"#请输入信息,格式为：姓名 工号 工资,可输入多组数据，Ctrl+Z+Enter结束。"<<endl;;
                 	while(cin>>names[index]>>ecodes[index]>>sal[index])
-						{
-                       	         index++;
-                      	         if(index>99)
+				{
+                       	        	index++;
+                      	         	if(index>99)
                        	                {
                                                 cout<<"#数据库已满，无法加入新的数据";
                                                 break;
                                         }
                 		}
                         system("cls");
-        		}
+        	}
 
                 else if (fs=='1')
                 {
@@ -55,13 +55,13 @@ int main()
                 	cout<<"#请输入姓名,可查询多组数据，Ctrl+Z+Enter结束。"<<endl;;
                 	search(names,ecodes,sal);
                 	system("cls");
-				}
+		}
                 else if (fs=='2')
                 {
                 	system("cls");
                 	cout<<"#请输入工号,可查询多组数据，Ctrl+Z+Enter结束。"<<endl;;
-					search(ecodes,names,sal);
-					system("cls");
+			search(ecodes,names,sal);
+			system("cls");
                 }
                 else if (fs=='3')
                 {
@@ -71,8 +71,7 @@ int main()
 			getchar(); 
 			getchar();
 			system("cls");
-                	
-				}
+		}
                 else if (fs=='4')
                 {	
                 	system("cls");
@@ -94,14 +93,14 @@ int main()
                 else if (fs=='6')
                 {	
                 	system("cls");
-					char flag=' '; 
+			char flag=' '; 
                 	int deleteindex;
                 	cout<<"#请输入你要删除的员工姓名 "<<endl; 
                 	deleteindex=searchonce(names,ecodes,sal);
 			cout<<"#你确定要删除这一组信息吗？请输入y确认。"<<endl;
 			cin>>flag;
 			if(flag=='y')
-				deleteinfo(deleteindex);
+			deleteinfo(deleteindex);
 			system("cls");
                 }
   		else if (fs=='e')
@@ -125,13 +124,14 @@ int search(string A[],string B[],float C[])
 				f=1;
 				break;
 			}
-			if(!f)
-		 		cout<<"#数据库里没有这条信息"<<endl;
+		if(!f)
+		cout<<"#数据库里没有这条信息"<<endl;
 	}
 	return 0; 
 }
 int sortstring(string A[],string B[],float C[]) 
-{	int flag=0;
+{	
+	int flag=0;
 	do
 		{	
 		    flag=0;
