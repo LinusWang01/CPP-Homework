@@ -13,9 +13,11 @@ using namespace std;
 		cout<<"请输入数据"<<endl;
 		for(i=0;i<length;i++)
                 	cin>>num[i];
+                        int f=0;
 		do
 		{
-			for(int i=0;i<length;i++)
+                        
+			for(int i=0;i<length-f;i++)
 			{
 				if(num[i]>num[i+1])
 				{
@@ -35,9 +37,10 @@ using namespace std;
 				flag=flag||flaga[p];
 			}
 			cout<<endl;
+                f++;
 		}while(flag==1);
 		for(int m=0;m<length;m++)
-			cout<<num[m]<<" ";
-		cout<<endl;
+		cout<<num[m]<<endl;
+		
 
 	}

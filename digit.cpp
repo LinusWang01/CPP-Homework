@@ -26,6 +26,5 @@ int main()
 		 digi=digit(num);
 		 cout<<"The digits of the number are"<<" "<<digi<<endl;
 		}
-	system("pause");
 	return 0;
 }

@@ -8,6 +8,6 @@ int main()
         for(h=0;h<100;h++)
           for(hand=0;hand<100;hand++)
              if(c*3==30&&c+h*2==20&&h+4*hand==9)
-             cout<<h+(hand*(c-hand));
+             cout<<h+(hand*(c-hand))<<endl;
     return 0;
 }

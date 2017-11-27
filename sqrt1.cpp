@@ -9,7 +9,6 @@ int main()
 	cout<<"We will output the number and its int-sqrt."<<endl ;
 	for(i=i;i<100;i++)
    		cout<<i<<"\t\t\t\t"<<int_sqrt(i)<<endl;
-   	system("pause");
 }
 /*求使得 square > x 成立的最小的 number=2n+1*/ 
 int int_sqrt_helper(int square, int n, int x)
