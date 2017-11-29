@@ -61,5 +61,6 @@ int main()
         for(int q=0;q<index;q++)
                 cout<<num[q]<<" ";
                 cout<<endl;
+        cout<<index<<endl;
 	return 0;
 }
