@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 //show the function menus
 int index=0;
@@ -60,50 +60,53 @@ int main()
                 {
                 	system("cls");
                 	cout<<"#请输入工号,可查询多组数据，Ctrl+Z+Enter结束。"<<endl;;
-			search(ecodes,names,sal);
-			system("cls");
+					search(ecodes,names,sal);
+					system("cls");
                 }
                 else if (fs=='3')
                 {
                 	system("cls");
                 	sortstring(names,ecodes,sal) ;
                 	cout<<"#按任意键返回主界面"<<endl;
-			getchar(); 
-			getchar();
-			system("cls");
+					getchar(); 
+					getchar();
+					system("cls");
 		}
                 else if (fs=='4')
                 {	
                 	system("cls");
-			sortstring(ecodes,names,sal) ;
-			cout<<"#按任意键返回主界面"<<endl;
-			getchar(); 
-			getchar();
-			system("cls");
+					sortstring(ecodes,names,sal) ;
+					cout<<"#按任意键返回主界面"<<endl;
+					getchar(); 
+					getchar();
+					system("cls");
                 }
                 else if (fs=='5')
                 {	
                 	system("cls");
-			sortfloat(names,ecodes,sal) ;
-			cout<<"#按任意键返回主界面"<<endl;
-			getchar(); 
-			getchar();
-			system("cls");
+					sortfloat(names,ecodes,sal) ;
+					cout<<"#按任意键返回主界面"<<endl;
+					getchar(); 
+					getchar();
+					system("cls");
                 }
                 else if (fs=='6')
                 {	
                 	system("cls");
-			char flag=' '; 
+					char flag=' '; 
                 	int deleteindex;
+                	errorpoint1: 
                 	cout<<"#请输入你要删除的员工姓名 "<<endl; 
                 	deleteindex=searchonce(names,ecodes,sal);
-			cout<<"#你确定要删除这一组信息吗？请输入y确认。"<<endl;
-			cin>>flag;
-			if(flag=='y')
-			deleteinfo(deleteindex);
-			system("cls");
+                	if(deleteindex==-1)
+                		goto errorpoint1;
+					cout<<"#你确定要删除这一组信息吗？请输入y确认,输入其它任意字符取消。"<<endl;
+					cin>>flag;
+					if(flag=='y')
+						deleteinfo(deleteindex);
+					system("cls");
                 }
-  		else if (fs=='e')
+  				else if (fs=='e')
                 {
 			break;
                 }
@@ -209,7 +212,10 @@ int searchonce(string A[],string B[],float C[])
 			break;
 		} 
 		if(!f)
+		{ 
 		 cout<<"#数据库里没有这条信息"<<endl;
+		 return -1; 
+		} 
 	return i; 
 }
 
