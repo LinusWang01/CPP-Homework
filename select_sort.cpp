@@ -16,8 +16,9 @@ int main()
 }
 void select_sort(int *p,int n) 
 {
+	int flag=0;
 	for(int q=0;q<n;q++)
-		{	
+		{	flag=0;
 			mini=*(p+q);
 			for(int y=q;y<n;y++)
 			{
@@ -25,10 +26,14 @@ void select_sort(int *p,int n)
 				{
 					mini=*(p+y);
 					sig=y;
+					flag=1;
 				}
 					
 			}
+				if(flag)
+				{
 				*(p+sig)=*(p+q) ;
-				*(p+q)=mini;	
+				*(p+q)=mini;
+				}
 		}
 }
